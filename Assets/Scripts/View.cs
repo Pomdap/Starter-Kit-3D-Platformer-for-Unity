@@ -144,7 +144,7 @@ public class View : MonoBehaviour
         float scroll = m_ZoomDelta;
         m_ZoomDelta = 0f;
 
-        HandleInputs(look.x / 20f, look.y / 20f, scroll / 10f);
+        HandleInputs(look.x, look.y, scroll);
     }
 
     private void HandleInputs(float mouseX, float mouseY, float scroll)
